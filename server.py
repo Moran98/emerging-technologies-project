@@ -14,8 +14,8 @@ def index():
     return render_template('index.html')
 
 # Add uniform route.
-@app.route('/api/uniform')
-def uniform():
+@app.route('/api/power')
+def power():
   return {"value": np.random.uniform()}
 
 # Add normal route.

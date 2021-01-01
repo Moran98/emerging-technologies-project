@@ -2,7 +2,14 @@ body{
     background-color:white!important;
 }
 
-.nav{
-    /* text-align: center!important; */
-    font-size: 50px;
+.header{
+    text-align: center;
+}
+
+.form-control{
+    width:200px!important;
+}
+
+.result{
+    border:1px solid black;
 }

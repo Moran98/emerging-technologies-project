@@ -12,24 +12,26 @@
     <title>G00356519</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="/">G00356519</a>
-      </nav>
+    <div class="container">
+        <a href="/" class="header">Power Production - G00356519</a><br/><br/>
     <div class="container">
         <div class="row">
           <div class="col-sm">
-            <input class="form-control" id="output" type="text" placeholder="Random number here.." readonly>
+            <input class="form-control" id="input" placeholder="Enter Speed Values"  type="number"><br/>
           </div>
         </div>
         <div class="row">
           <div class="col-sm">
-            <button type="button" class="btn btn-success" id="uniform-button">Uniform</button>
-          </div>
-          <div class="col-sm">
-            <button type="button" class="btn btn-primary" id="normal-button">Normal</button>
+            <button type="button" class="btn btn-success" id="predict-button">Predict</button><br/><br/>
           </div>
         </div>
+
+        <div class="result">
+            <input class="form-control" id="output" type="text" placeholder="The predicted result" readonly>
+        </div>
     </div>
+  </div>
+
 
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -39,15 +41,9 @@
 
     <script>
         // Adapted from stack overflow posts.
-        $("#normal-button").click(function(e) {
+        $("#predict-button").click(function(e) {
             e.preventDefault();
             $.getJSON("/api/normal", function(data) {
-                $('#output').val(data.value);
-            });
-        });
-        $("#uniform-button").click(function(e) {
-            e.preventDefault();
-            $.getJSON("/api/uniform", function(data) {
                 $('#output').val(data.value);
             });
         });
