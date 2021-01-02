@@ -1,3 +1,6 @@
-numpy
 tensorflow
-flask
+python==3.8
+click==7.1.2
+Flask==1.1.2
+numpy==1.19.0
+Werkzeug==1.0.1

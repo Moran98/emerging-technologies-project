@@ -2,7 +2,7 @@
 
 # Windows
 ```
-set FLASK_APP=rando.py
+set FLASK_APP=server.py
 python -m flask run
 ```
 
@@ -13,7 +13,7 @@ docker run --name rando-container -d -p 5000:5000 rando-image
 
 # Linux
 ```
-export FLASK_APP=rando.py
+export FLASK_APP=server.py
 python3 -m flask run
 ```
 

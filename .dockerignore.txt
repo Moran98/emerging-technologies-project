@@ -1,0 +1,8 @@
+.git
+.DS_Store
+.gitignore
+Dockerfile
+README.md
+__pycache__/
+*.py[cod]
+*$py.class

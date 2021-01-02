@@ -1,0 +1,4 @@
+# Removing unwanted folders
+
+.ipynb_checkpoints
+.__pycache__
