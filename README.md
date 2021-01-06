@@ -1,21 +1,35 @@
-# Emerging Technology Project - G00356519
+# Emerging Technology Project
 
-# Overview
+## Overview
 The goal of this project is to produce a model that accurately predicts wind turbine power output from wind speed
 values, as in the data set. A web service created using Flask responds with
 predicted power values based on speed values sent as HTTP requests.
 
-# Windows
+## Windows
 ```
 set FLASK_APP=server.py
 python -m flask run
 ```
 
-# Linux
+## Linux
 ```
 export FLASK_APP=server.py
 python3 -m flask run
 ```
+
+## Dockerfile
+```
+docker build . -t server-app
+docker run --name rando-container -d -p 5000:5000 server-app
+```
+
+### Built With 
+* Visual Studio Code
+* Jupyter Notebook
+* Docker
+
+### Author
+* [Aaron Moran - G00356519](https://github.com/Moran98)
 
 ### References
 * [Ian McLoughlin's Github Repository - Keras Linear](https://github.com/ianmcloughlin/jupyter-teaching-notebooks/blob/master/keras-linear.ipynb)
