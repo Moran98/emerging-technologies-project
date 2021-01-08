@@ -2,8 +2,8 @@
 
 ## Overview
 The goal of this project is to produce a model that accurately predicts wind turbine power output from wind speed
-values, as in the data set. A web service created using Flask responds with
-predicted power values based on speed values sent as HTTP requests.
+values, as in the data set. A web service created using    ```Flask   ``` responds with
+predicted power values based on speed values sent as    ```HTTP   ``` requests.
 
 ### Windows
 ```
@@ -24,7 +24,7 @@ docker run --name rando-container -d -p 5000:5000 server-app
 ```
 
 ## Keras 
-Keras is a Machine Learning API which is powered through Tensorflow. Its main uses are for fast implementation of experimentational datasets to train and test models. The type of model we are testing the powerproduct.csv dataset with is the ```Sequential``` model.
+Keras is a Machine Learning API which is powered through Tensorflow. Its main uses are for fast implementation of experimentational datasets to train the data, test the models and flatten the layers. The type of model we are testing the  ```powerproduct.csv ``` dataset with is the ```Sequential``` model. By setting the  ```epochs ``` value, this is the number of times the algorithm has examined the dataset. Saving and Loading the models have been made easy by Keras as by using   ```model.save(param)  ``` and   ```model.load(params)  ``` will allow us to store and access the model from an external python script.
 
 ### Built With 
 * Visual Studio Code
