@@ -5,28 +5,33 @@ The goal of this project is to produce a model that accurately predicts wind tur
 values, as in the data set. A web service created using Flask responds with
 predicted power values based on speed values sent as HTTP requests.
 
-## Windows
+### Windows
 ```
 set FLASK_APP=server.py
 python -m flask run
 ```
 
-## Linux
+### Linux
 ```
 export FLASK_APP=server.py
 python3 -m flask run
 ```
 
-## Dockerfile
+### Dockerfile
 ```
 docker build . -t server-app
 docker run --name rando-container -d -p 5000:5000 server-app
 ```
 
+## Keras 
+Keras is a Machine Learning API which is powered through Tensorflow. Its main uses are for fast implementation of experimentational datasets to train and test models. The type of model we are testing the powerproduct.csv dataset with is the ```Sequential``` model.
+
 ### Built With 
 * Visual Studio Code
 * Jupyter Notebook
 * Docker
+
+
 
 ### Author
 * [Aaron Moran - G00356519](https://github.com/Moran98)
